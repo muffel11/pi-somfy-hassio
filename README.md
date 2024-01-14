@@ -3,7 +3,7 @@
 This repository contains minimal implementation allowing to run Pi-Somfy as a HASSIO add-on. 
 
 1. Connect to your raspberry hassio host over ssh
-2. `git clone https://github.com/korrix/pi-somfy-hassio.git addons/somfy`
+2. `git clone https://github.com/muffel11/pi-somfy-hassio.git addons/somfy`
 3. Navigate to `https://YOUR_HASSIO/hassio/store`
 4. Enter the hidden menu in top right corner and choose `Refresh`. You should see "Local add-ons" section with "Somfy shutters" plugin
 5. Install the plugin
