@@ -1,6 +1,6 @@
 FROM alpine
 
-RUN apk add alpine-sdk python3-dev py3-pip 
+RUN apk add alpine-sdk python3-dev py3-pip py3-requests
 RUN wget --output-document=pigpio.zip https://github.com/joan2937/pigpio/archive/master.zip \
 # Downloaded content is placed inside specific folder to not be depended of branch naming from repo
     && mkdir pigpio \
