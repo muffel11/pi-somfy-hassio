@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.18
 
 RUN apk add alpine-sdk python3-dev py3-pip py3-requests
 RUN wget --output-document=pigpio.zip https://github.com/joan2937/pigpio/archive/master.zip \
