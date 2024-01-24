@@ -1,5 +1,8 @@
-FROM alpine:3.18
+FROM alpine:3.19
 
+RUN sed -i 's/#http/http/g' /etc/apk/repositories \
+    && apk upgrade
+    
 RUN apk add alpine-sdk python3-dev py3-pip py3-requests
 RUN wget --output-document=pigpio.zip https://github.com/joan2937/pigpio/archive/master.zip \
 # Downloaded content is placed inside specific folder to not be depended of branch naming from repo
@@ -19,7 +22,7 @@ RUN wget --output-document=somfy.zip https://github.com/Nickduino/Pi-Somfy/archi
     && rm somfy.zip \
     && cd /somfy/* \
     && sed -i -e 's/sudo //' operateShutters.py \
-    && pip3 install -r requirements.txt
+    && pip3 install -r requirements.txt --break-system-packages
 
 COPY run.sh /
 RUN chmod a+x /run.sh
