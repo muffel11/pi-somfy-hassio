@@ -1,5 +1,14 @@
 # Pi-Somfy HomeAssistant add-on
+## Works with
 
+Home Assistant
+
+    Core 2024.1.5
+    Supervisor 2023.12.1
+    Operating System 11.4
+    Frontend 20240104.0
+    Alpine Linux 3.19
+    
 This repository contains minimal implementation allowing to run Pi-Somfy as a HASSIO add-on. 
 
 1. Connect to your raspberry hassio host over ssh
