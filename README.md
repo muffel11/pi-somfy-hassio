@@ -1,7 +1,7 @@
 # Pi-Somfy HomeAssistant add-on
 ## Works with
 
-Home Assistant:
+Home Assistant
     Core 2024.1.5
     Supervisor 2023.12.1
     Operating System 11.4
